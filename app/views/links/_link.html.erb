@@ -1,4 +1,5 @@
 <li data-link-id=<%= link.id %>>
+  <%= link.title %>
   <%= link_to link.url, link.url %>
   <%= link_to "×", link, method: :delete, remote: true %>
 </li>
