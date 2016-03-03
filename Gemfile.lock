@@ -102,6 +102,9 @@ GEM
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
+    opengraph_parser (0.2.3)
+      addressable
+      nokogiri
     pg (0.18.4)
     pkg-config (1.1.7)
     poltergeist (1.9.0)
@@ -196,6 +199,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   listen (~> 3.0.5)
+  opengraph_parser
   pg (~> 0.18)
   poltergeist
   puma
