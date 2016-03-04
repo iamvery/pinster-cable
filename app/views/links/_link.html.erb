@@ -1,5 +1,7 @@
 <li data-link-id=<%= link.id %>>
   <%= link.title %>
   <%= link_to link.url, link.url %>
+  (<%= link_to "Ew!", link_likes_path(link), method: :post %>)
+  <%= pluralize(link.likes, "ew") %>
   <%= link_to "×", link, method: :delete, remote: true %>
 </li>
