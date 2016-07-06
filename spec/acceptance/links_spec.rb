@@ -11,6 +11,16 @@ RSpec.describe "Links", type: :feature do
       expect(page).to have_content("iamvery.com")
       expect(page).to have_content("google.com")
     end
+
+    it "displays open graph titles" do
+      Link.create!(url: "http://twitter.com")
+      Link.create!(url: "http://google.com")
+
+      visit links_path
+
+      expect(page).to have_content("Twitter")
+      expect(page).to have_content("Google")
+    end
   end
 
   describe "creating link" do
