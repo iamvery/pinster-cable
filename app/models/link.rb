@@ -1,7 +1,7 @@
 require "open_graph_adapter"
 
 class Link < ApplicationRecord
-  def title
-    OpenGraphAdapter.new(url).title
+  def title(open_graph = OpenGraphAdapter)
+    open_graph.new(url).title
   end
 end
