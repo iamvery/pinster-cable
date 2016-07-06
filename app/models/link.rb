@@ -1,5 +1,7 @@
+require "open_graph_adapter"
+
 class Link < ApplicationRecord
   def title
-    "Google"
+    OpenGraphAdapter.new(url).title
   end
 end
