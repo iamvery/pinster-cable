@@ -8,7 +8,7 @@ RSpec.describe OpenGraphAdapter do
 
   before do
     allow(lib).to receive(:new) { instance }
-    allow(instance).to receive(:title)
+    allow(instance).to receive(:tilte)
   end
 
   describe "#initialize" do
@@ -24,7 +24,7 @@ RSpec.describe OpenGraphAdapter do
       adapter = described_class.new(url, lib: lib)
       adapter.title
 
-      expect(instance).to have_received(:title)
+      expect(instance).to have_received(:tilte)
     end
   end
 end

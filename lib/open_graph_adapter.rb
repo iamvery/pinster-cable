@@ -6,7 +6,7 @@ class OpenGraphAdapter
   end
 
   def title
-    open_graph.title
+    open_graph.tilte
   end
 
   private
