@@ -2,8 +2,8 @@ require "spec_helper"
 require "open_graph_adapter"
 
 RSpec.describe OpenGraphAdapter do
-  let(:lib) { double(:open_graph_class) }
-  let(:instance) { double(:open_graph_instance) }
+  let(:lib) { class_double(OpenGraph) }
+  let(:instance) { instance_double(OpenGraph) }
   let(:url) { "http://example.com" }
 
   before do
